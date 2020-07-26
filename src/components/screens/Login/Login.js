@@ -6,6 +6,7 @@ import {
   TextField,
   Box,
   CircularProgress,
+  Link,
 } from '@material-ui/core';
 import Logo from '../../common/Logo';
 
@@ -66,6 +67,11 @@ export default function Login({loading = false}) {
                     loading ? <CircularProgress size={26} color="white" /> : "Sign In"
                   }
                 </Button>
+              </Box>
+            </Grid>
+            <Grid item>
+              <Box my={1}>
+                <Link component="button">Forgot Password?</Link>
               </Box>
             </Grid>
           </Grid>
