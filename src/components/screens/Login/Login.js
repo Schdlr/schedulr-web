@@ -11,7 +11,7 @@ import Logo from '../../common/Logo';
 export default function Login() {
   return (
     <Container maxWidth="xs" fixed>
-      <Box boxShadow={1} padding={3} marginTop={8}>
+      <Box boxShadow={1} padding={3} bgcolor="white">
         <Grid
           container
           direction="column"
