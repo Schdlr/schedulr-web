@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Logo({size = 64}) {
+export default function Logo({size = 48}) {
   return (
     <img
       alt="Logo"
