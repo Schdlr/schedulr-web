@@ -9,7 +9,7 @@ import {
 } from '@material-ui/core';
 import Logo from '../../common/Logo';
 
-export default function Login({loading = !false}) {
+export default function Login({loading = false}) {
   return (
     <Box display="flex" flex={1} justifyContent="center" alignItems="center">
       <Container maxWidth="xs" fixed>
