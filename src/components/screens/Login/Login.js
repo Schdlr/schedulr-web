@@ -37,9 +37,8 @@ export default function Login({loading = false}) {
                 variant="outlined"
                 type="email"
                 autoComplete="email"
-                margin="normal"
+                margin="dense"
                 autoFocus
-                required
                 fullWidth
               />
             </Grid>
@@ -51,8 +50,7 @@ export default function Login({loading = false}) {
                 variant="outlined"
                 type="password"
                 autoComplete="current-password"
-                margin="normal"
-                required
+                margin="dense"
                 fullWidth
               />
             </Grid>
