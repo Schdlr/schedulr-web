@@ -5,10 +5,11 @@ import {
   Button,
   TextField,
   Box,
+  CircularProgress,
 } from '@material-ui/core';
 import Logo from '../../common/Logo';
 
-export default function Login() {
+export default function Login({loading = !false}) {
   return (
     <Box display="flex" flex={1} justifyContent="center" alignItems="center">
       <Container maxWidth="xs" fixed>
@@ -63,7 +64,9 @@ export default function Login() {
                   color="primary"
                   fullWidth
                 >
-                  Sign In
+                  {
+                    loading ? <CircularProgress size={26} color="white" /> : "Sign In"
+                  }
                 </Button>
               </Box>
             </Grid>
