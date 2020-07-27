@@ -5,6 +5,7 @@ import {
 } from '@material-ui/core';
 import Logo from '../../common/Logo';
 import Login from './forms/Login';
+// import ResetPassword from './forms/ResetPassword';
 // import ForgotPassword from './forms/ForgotPassword';
 
 export default function Authentication({loading = false}) {
@@ -15,7 +16,7 @@ export default function Authentication({loading = false}) {
           <Box justifyContent="center" alignItems="center" margin={2} flex={1} display="flex">
             <Logo />
           </Box>
-          <Login loading={loading} />
+          <Login />
         </Box>
       </Container>
     </Box>

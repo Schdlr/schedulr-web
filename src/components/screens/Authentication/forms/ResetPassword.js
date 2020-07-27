@@ -17,19 +17,17 @@ export default function Login({loading = false}) {
     >
       <Grid item>
         <Box mb={1}>
-          <Typography variant="h5" component="h1">Admin</Typography>
+          <Typography variant="h5" component="h1">Reset Password</Typography>
         </Box>
       </Grid>
       <Grid item>
         <TextField
-          id="email"
-          name="email"
-          label="Email Address"
+          id="password"
+          name="password"
+          label="New Password"
           variant="outlined"
-          type="email"
-          autoComplete="email"
+          type="password"
           margin="dense"
-          autoFocus
           fullWidth
         />
       </Grid>
@@ -37,10 +35,9 @@ export default function Login({loading = false}) {
         <TextField
           id="password"
           name="password"
-          label="Password"
+          label="Confirm Password"
           variant="outlined"
           type="password"
-          autoComplete="current-password"
           margin="dense"
           fullWidth
         />
@@ -49,13 +46,13 @@ export default function Login({loading = false}) {
         <Box marginTop={2}>
           <Button
             loading={loading}
-            text="Sign In"
+            text="Continue"
           />
         </Box>
       </Grid>
       <Grid item>
         <Box my={1}>
-          <Link component="button">Forgot Password?</Link>
+          <Link component="button">Sign In</Link>
         </Box>
       </Grid>
     </Grid>
