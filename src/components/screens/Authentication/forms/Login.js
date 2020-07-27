@@ -46,6 +46,11 @@ export default function Login({loading = false}) {
         />
       </Grid>
       <Grid item>
+        <Box my={2} justifyContent="space-between" display="flex" flex={1}>
+          <Link component="button">Forgot Password?</Link>
+        </Box>
+      </Grid>
+      <Grid item>
         <Box marginTop={2}>
           <Button
             loading={loading}
@@ -55,8 +60,7 @@ export default function Login({loading = false}) {
       </Grid>
       <Grid item>
         <Box my={2} justifyContent="space-between" display="flex" flex={1}>
-          <Link component="button">Forgot Password?</Link>
-          <Link component="button">Sign Up</Link>
+          <Link component="button">Create an account</Link>
         </Box>
       </Grid>
     </Grid>

@@ -77,7 +77,6 @@ export default function Login({loading = false}) {
       </Grid>
       <Grid item>
         <Box my={2} justifyContent="space-between" display="flex" flex={1}>
-          <Link component="button">Forgot Password?</Link>
           <Link component="button">Sign In</Link>
         </Box>
       </Grid>
