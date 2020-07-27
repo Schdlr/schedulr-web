@@ -1,5 +1,3 @@
 import Authentication from './Authentication';
 
-export {
-  Authentication,
-};
+export default Authentication;
