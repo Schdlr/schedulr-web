@@ -17,8 +17,31 @@ export default function Login({loading = false}) {
     >
       <Grid item>
         <Box mb={1}>
-          <Typography variant="h5" component="h1">Login</Typography>
+          <Typography variant="h5" component="h1">Create an account</Typography>
         </Box>
+      </Grid>
+      <Grid item>
+        <TextField
+          id="firstname"
+          name="firstname"
+          label="First Name"
+          variant="outlined"
+          type="text"
+          margin="dense"
+          autoFocus
+          fullWidth
+        />
+      </Grid>
+      <Grid item>
+        <TextField
+          id="lastname"
+          name="lastname"
+          label="Last Name"
+          variant="outlined"
+          type="text"
+          margin="dense"
+          fullWidth
+        />
       </Grid>
       <Grid item>
         <TextField
@@ -29,7 +52,6 @@ export default function Login({loading = false}) {
           type="email"
           autoComplete="email"
           margin="dense"
-          autoFocus
           fullWidth
         />
       </Grid>
@@ -49,14 +71,14 @@ export default function Login({loading = false}) {
         <Box marginTop={2}>
           <Button
             loading={loading}
-            text="Sign In"
+            text="Sign Up"
           />
         </Box>
       </Grid>
       <Grid item>
         <Box my={2} justifyContent="space-between" display="flex" flex={1}>
           <Link component="button">Forgot Password?</Link>
-          <Link component="button">Sign Up</Link>
+          <Link component="button">Sign In</Link>
         </Box>
       </Grid>
     </Grid>
